@@ -54,6 +54,43 @@
                                     <action selector="startCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNB-cK-D29"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaH-yA-nPm">
+                                <rect key="frame" x="90" y="308" width="234" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="spring animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlS-6t-tDG">
+                                        <rect key="frame" x="53.666666666666657" y="53.666666666666686" width="127" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.82514394859999995" green="1" blue="0.84587413860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="RlS-6t-tDG" firstAttribute="centerX" secondItem="gaH-yA-nPm" secondAttribute="centerX" id="QyX-mB-JtK"/>
+                                    <constraint firstAttribute="height" constant="128" id="oZB-BR-IXg"/>
+                                    <constraint firstItem="RlS-6t-tDG" firstAttribute="centerY" secondItem="gaH-yA-nPm" secondAttribute="centerY" id="v6e-wp-in4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Ii-GUD">
+                                <rect key="frame" x="90" y="719" width="234" height="30"/>
+                                <color key="backgroundColor" red="0.94636863469999999" green="0.59736376999999996" blue="0.2002493739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Run spring animation">
+                                    <color key="titleColor" red="0.82514394859999995" green="1" blue="0.84587413860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVH-pu-FXy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -61,9 +98,15 @@
                             <constraint firstItem="fMe-Xn-C6v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="0EP-Po-YgN"/>
                             <constraint firstItem="ttV-vt-6gQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.565217" id="Ay9-uX-MbG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fMe-Xn-C6v" secondAttribute="trailing" constant="90" id="HqL-EG-xdi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gaH-yA-nPm" secondAttribute="trailing" constant="90" id="JH0-hJ-EX0"/>
+                            <constraint firstItem="gaH-yA-nPm" firstAttribute="top" secondItem="fMe-Xn-C6v" secondAttribute="bottom" constant="56" id="NCb-95-JoF"/>
+                            <constraint firstItem="Cun-Ii-GUD" firstAttribute="top" secondItem="ttV-vt-6gQ" secondAttribute="bottom" constant="56" id="Nys-LV-0gW"/>
+                            <constraint firstItem="gaH-yA-nPm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="Pfu-Fj-Mh1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ttV-vt-6gQ" secondAttribute="bottom" multiplier="1.3" id="Yp8-NN-xx6"/>
                             <constraint firstItem="fMe-Xn-C6v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="e8W-2I-00Z"/>
+                            <constraint firstItem="Cun-Ii-GUD" firstAttribute="width" secondItem="ttV-vt-6gQ" secondAttribute="width" id="etP-JO-bcZ"/>
                             <constraint firstItem="ttV-vt-6gQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tdN-hO-VoS"/>
+                            <constraint firstItem="Cun-Ii-GUD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zUl-rz-bUY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -85,6 +128,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
