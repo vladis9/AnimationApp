@@ -5,12 +5,16 @@
 //  Created by Vlad Zinevich on 19.07.2021.
 //
 
-import UIKit
+import Spring
 
 class ViewController: UIViewController {
 
     @IBOutlet var coreAnimationView: UIView!
+    @IBOutlet var springAnimationView: SpringView!
+    
     @IBOutlet var coreAnimationButton: UIButton!
+    @IBOutlet var springAnimationButton: SpringButton!
+    
     
     private var originCoordinate: CGFloat?
     
@@ -31,6 +35,10 @@ class ViewController: UIViewController {
                 self.coreAnimationView.frame.origin.x += 40
             }
         })
+    }
+    
+    @IBAction func startSpringAnimation(_ sender: SpringButton) {
+        
     }
     
 }

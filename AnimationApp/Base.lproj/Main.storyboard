@@ -54,7 +54,7 @@
                                     <action selector="startCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNB-cK-D29"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaH-yA-nPm">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaH-yA-nPm" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="90" y="308" width="234" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="spring animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlS-6t-tDG">
@@ -76,7 +76,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Ii-GUD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Ii-GUD" customClass="SpringButton" customModule="Spring">
                                 <rect key="frame" x="90" y="719" width="234" height="30"/>
                                 <color key="backgroundColor" red="0.94636863469999999" green="0.59736376999999996" blue="0.2002493739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Run spring animation">
@@ -88,7 +88,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="startCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVH-pu-FXy"/>
+                                    <action selector="startSpringAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ds-Xg-6ky"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -112,6 +112,8 @@
                     <connections>
                         <outlet property="coreAnimationButton" destination="ttV-vt-6gQ" id="sdA-rD-BEw"/>
                         <outlet property="coreAnimationView" destination="fMe-Xn-C6v" id="5ie-7e-04S"/>
+                        <outlet property="springAnimationButton" destination="Cun-Ii-GUD" id="aLM-Sw-v3S"/>
+                        <outlet property="springAnimationView" destination="gaH-yA-nPm" id="AXS-wG-lRC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
